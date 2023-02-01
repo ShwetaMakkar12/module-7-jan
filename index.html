@@ -1,80 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TimeZone</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="firstpage">
-      <div class="main1">
-        <div id="mainpageheading">
-          <div id="headingdataofsecond">TimeZone API</div>
-          <div id="headingdataofthird">Your Current Time Zone</div>
-          </div>
-          <div class="main2data">
-            <div>
-              Name Of Time Zone : <span id="name"></span>
-            </div> <br>
-            <div>
-                Lat:<span id="lati"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Long:<span id="longi"></span> 
-            </div> <br>
-            <div>
-              Offset STD: <span id="offSTD"></span>
-            </div> <br>
-            <div>
-              Offset STD Seconds:  <span id="offSTDsec"></span>
-            </div> <br>
-            <div>
-              Country: <span id="country"></span>
-            </div> <br>
-            <div>  
-              Postcode: <span id="post"></span>
-            </div> <br>
-            <div>
-              City: <span id="city"></span>
-            </div> <br></div>
-        <div class="main3">
-           <div id="main3heading">Enter Address</div>
-      </div>
-      <div class="searchbar">  
-        <form onsubmit="return search()">
-          <input type="text" id="inputbox" placeholder="Address">
-          <button type="submit">Submit</button>
-      </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>TimeZone API</h1>
+        <h1>Your Current TimeZone</h1>
+        <div class="data-box">
+            <p>Name of TimeZone : <span id="name"></span></p>
+            <div class="cords">
+                <p class="lat">Lat:<span id="lati"></span></p>
+                <p class="long">Long:<span id="longi"></span></p>
+            </div><br>
+        <div>Offset STD : <span id="offSTD"></span></div><br>
+        <div>Offset STD Seconds : <span id="offSTDsec"></span></div><br>
+            <div>Offset DST : <span id="offDST"></span></div><br>
+            <div>Offset DST Seconds : <span id="offDSTsec"></span></div><br>
+            <div>Country : <span id="country"></span></div><br>
+            <div>City : <span id="city"></span></div><br>
+            <div>Postcode : <span id="post"></span></div><br>
+        </div>
+    </div>
+
+    <div class="search-sec">
+        <div class="searchbox">
+            <h1>Enter Address</h1>
+            <form onsubmit="return search()">
+                <input type="text" id="inpu-box" placeholder="Address">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
     <p id="error" class="hide">*Please enter a valid address.</p>
-    <div class="result-container hide" id="resultcont">
-    <div id="jsheading">Your result </div>
-    <div class="jsdata"> <div>
-        Name Of Time Zone : <span id="name-r"></span>
-      </div> <br>
-      <div>
-          Lat:<span id="lati-r"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Long:<span id="loni-r"></span> 
-      </div> <br>
-      <div>
-        Offset STD: <span id="offSTD-r"></span>
-      </div> <br>
-      <div>
-        Offset STD Seconds:  <span id="offSTDsec-r"></span>
-      </div> <br>
-      <div>
-        Country: <span id="country-r"></span>
-      </div> <br>
-      <div>  
-        Postcode: <span id="post-r"></span>
-      </div> <br>
-      <div>
-        City: <span id="city-r"></span>
-      </div> <br></div>
-      <script src="script.js"></script>
-    </body>
-  </html>
+    <div class="result-box hide" id="resultcont">
+        <h1>Your Result</h1>
+        <div class="data-box result">
+            <p>Name of TimeZone : <span id="name-r"></span></p>
+            <div class="cords">
+                <p class="lat">Lat:<span id="lati-r"></span></p>
+                <p class="long">Long:<span id="longi-r"></span></p><br>
+            </div>
+            <div>Offset STD : <span id="offSTD"></span></div><br>
+        <div>Offset STD Seconds : <span id="offSTDsec"></span></div><br>
+            <div>Offset DST : <span id="offDST"></span></div><br>
+            <div>Offset DST Seconds : <span id="offDSTsec"></span></div><br>
+            <div>Country : <span id="country"></span></div><br>
+            <div>City : <span id="city"></span></div><br>
+            <div>Postcode : <span id="post"></span></div><br>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
