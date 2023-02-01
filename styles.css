@@ -1,163 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter";
-  font-style: normal;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    width: 100%;
-    height: 200%;
-}
-#mainpage {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  background: #000000;
-  bottom: 0px;
-  right: 0px;
-}
-
-#mainpageheading {
-  display: flex;
-  width: 99%;
-  height: 99%;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 121px;
-  color: #ffffff;
-}
-.headingdata {
-    position: absolute;
-    height: 10%;
-    top: 20%;
-    margin-left: 20px;
-    padding: 20px;
-    overflow:hidden ;
-}
-  
-  .main1 {
-    background-color: #ffffff;
-    height: 1100px;
-    width: 99%;
-  }
-  #headingdataofsecond {
-    margin-left: 20px;
-    padding: 20px;
-    display: flex;
-    position: absolute;
-    height: 20%;
-    top: 7%;
-    overflow: hidden;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 121px;
-    color: #000000
-  }
-  #headingdataofthird {
-    margin-left: 20px;
-    padding: 20px;
-    display: flex;
-    position: absolute;
-    height: 30%;
-    top: 27%;
-    overflow: hidden;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 121px;
-    color: #000000;
-    overflow: hidden;
-  }
-  .main2data {
-    position: absolute;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 61px;
-    height: auto;
-    width: 85%;
-    border: 2px solid black;
-    top: 50%;
-    margin: 5%;
-    padding: 2%;
-    overflow: hidden;
-  }
-
-  .main3{
-    position: absolute;
-    height: 1800px;
-    width: 100%;
-    background-color: #000000;
-    top:200%;
-    left:0px;
-    right:0px;
-    bottom:0px;
-}
-#main3heading {
-    display: flex;
-    position: absolute;
-    height: 20%;
-    margin: 5%;
-    overflow: hidden;
-    font-weight: 900;
-    font-size: 100px;
-    line-height: 121px;
-    color: #ffffff;
-  }
-  #inputbox{
-    position: absolute;
-    color: #FFFFFF;
     background-color: black;
-    left: 5%;
-    height: 9vh;
-    width: 75vw;
-    border: 1px solid white;
-    font-size: 40px;
-    top: 235%;
+    color: white;
 }
 
-#inputbox:focus {     
-    border:2px;
+
+.lat{
+    display: inline;
 }
-    
-button {
+.long{
+    display: inline;
     position: absolute;
-    width: 260.75px;
-    height: 58px;
-    left: 5%;
-    top: 252%;
-    font-size: 30px;
+    left: 50%;
+}
+.box{
+    padding: 35px;
+    background-color: white;
+    color: black;
+    width: 100vw;
 }
 
-.button input{
-    font-size: 40px;
+.cords{
+    position: relative;
 }
-#jsheading{
-    display: flex;
-    position: absolute;
-    height: 20%;
-    top:267%;
-    overflow: hidden;
-    font-weight: 900;
-    font-size: 100px;
-    line-height: 121px;
-    color: #ffffff;
-    margin-left: 5%;
+.data-box{
+    border: 3px black solid;
+    padding: 32px;
+    margin-top: 22px;
 }
-.jsdata{
-        position: absolute;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 61px;
-        height: auto;
-        width: 85%;
-        border: 2px solid white;
-        top: 280%;
-        margin: 5%;
-        padding: 2%;
-        overflow: hidden;
-        color:white;
-      }
+.data-box p{
+    font-size: large;
+    margin-block: 15px;
+}
+.search-sec{
+    margin: 32px;
+}
+
+button{
+    width: 145px;
+    height: 32px;
+    cursor: pointer;
+}
+input{
+    width: 92vw;
+    display: block;
+    margin-block: 11px;
+    height: 32px;
+    outline: none;
+    background-color: black;
+    border: white 0.5px solid 0.5;
+    color: white;
+}
+.result{
+    border: 2px white solid;
+    background-color: black;
+    color: white;
+}
+.result-box{
+    margin: 40px;
+}
+.hide{
+    display:none;
+}
+
+#error{
+    text-align: center;
+    color:darkred;
+    font-size: large;
+}
